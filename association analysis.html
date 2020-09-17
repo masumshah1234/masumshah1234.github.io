@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Association Analysis</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="main-container">
+		<br>
+
+		<h3>Association Analysis</h3>
+
+		<p>This project was a part of Data Mining and Data Warehousing course that I took in Fall 2019 during my Master's degree.
+		<br>
+		<br>
+		 The Online Retail dataset that contains about 500,000 transactions and following 8 columns: Invoice No, Stock Code, Description, Quantity, Invoice Date, Unit Price, Customer ID and Country was used for this project. As a part of data preprocessing additional spaces were removed by calling Python strip method and the NA values and cancelled orders were removed from dataset.  
+		 Dataframe for France was selected as a particular country.
+		 The above gathered data was grouped on the basis of Description and Invoice columns values and then aggregation was performed on the data by summing the Quantity values. 
+		 The NA values were then filled with 0 and the above processed data was returned. Using < basket_french.applymap(encode_units) >  which applies the function on each value in the table: if a value is more than or equal to 1 we replace it with 1 and for other values that is 0 and less we change it to 0.
+
+		<br>
+		<br>
+		An association rule has two parts: an antecedent (if) and a consequent (then). An antecedent is an item found within the data. A consequent is an item found in combination with the antecedent. Support measures how frequently an item occurs in the dataset; confidence is a measure of its predictive power or accuracy, and lift is a rule that measures how much more likely one item or itemset is purchased relative to its typical rate of purchase. To determine which items are frequent, the support threshold was set to 0.07, that means an item will be considered as frequent if at least 7 percent of all the baskets contain it. The confidence threshold was set to 0.06, that indicates that 60% of the transaction where the presence of consequents results in the presence of antecedent. 
+
+		<br> 
+		<br>
+		<br>
+		This project distinguished some rules related to France and Germany Market which can be used to make recommendations for customers and to better understand their preferences. It helped to analyze products in correct order to enhance the selling...to provide the better user experience by recommending them the items they like. 
+		<br>
+ Happy customer -> great sales…!
+
+
+		<h5>Technologies and platform used:</h5>
+		<ul>
+			<li>- R</li>
+			<li>- Pandas and Numpy libraries </li>
+			<li>- matplotlib</li>
+			<li>- Apriori Algorithm</li>
+			<li>- mlxtend</li>
+	</div>
+
+</body>
+</html>

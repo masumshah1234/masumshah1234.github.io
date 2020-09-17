@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Steganography</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="main-container">
+		<br>
+
+		<h3>Image Steganography - Data Hiding</h3>
+
+		<p>I implemented this project back in February-April(Spring) 2019 when I took Computer Forensics course in my Master's course.
+		<br>
+		<br>
+		 Steganography is the art of hiding the fact that communication is taking place by hiding secret information in other information and the encrypted information will be unknown to a normal user.There are different types of steganography like Text Steganography, ImageSteganography, Video Steganography, Email Steganography, Audio Steganography etc. For my course, I demonstrated Image Steganography Tool. In this steganography, secret message is hidden in the image. The project was basically divided in three phases: - 1). Hiding secret data in an image file (Stego Image). 2) Extracting the data from image file. 3) Analyse and compare the original image file and the Stego image.
+		<br>
+		<br>
+		If the sender sends that file in a group, then only the targeted user can retrieve the message from the encrypted file using decryption. Other users will find it as a normal image file, not knowing the actual purpose behind this communication. So, I creatied a tool to perform text to image steganography. Python was used as programming language, so the tool was platform independent. The designing of this tool involved the use of LSB (Least Significant Bits) technique, because it does not affect the visibility property of the image. The pixels’ LSB are replaced by the message bits. This tool encrypted the secret message in the image by sender and then the targeted user can decrypt the message from the image.
+		<br> 
+		<br>
+		<br>
+
+		<h5>Technologies and platform used:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- Linux</li>
+	</div>
+
+</body>
+</html>
